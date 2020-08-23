@@ -55,6 +55,7 @@ footer {
         cursor: pointer;
     }
 }
+// Configuration des menus pages d'acceuil
 
 .grille_menu {
     display: grid;
@@ -230,7 +231,7 @@ footer {
         font-size: 2.5rem;
     }
 }
-.menu1_titre_miseenpage {
+.menu_titre_miseenpage {
     width: 100%;
     height: 100px;
     display: flex;
@@ -278,21 +279,7 @@ h3:hover {
         flex-basis: 100%;
     }
 }
-.menu2_titre_miseenpage {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 1000ms;
-    }
-}
-h3:hover {
-    background-size: 100% 100%; /*Animation des H3*/
-}
+
 .price2 {
     p {
         font-family: 'Kurale', serif;
@@ -337,21 +324,6 @@ h3:hover {
         
     }
 }
-.menu3_titre_miseenpage {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 1000ms;
-    }
-}
-h3:hover {
-    background-size: 100% 100%; /*Animation des H3*/
-}
 
 //Menu4 La palette du goût
 .Menu_4 {
@@ -379,21 +351,7 @@ h3:hover {
         
     }
 }
-.menu4_titre_miseenpage {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 1000ms;
-    }
-}
-h3:hover {
-    background-size: 100% 100%; /*Animation des H3*/
-}
+
 
 //Mentions légales
 .title_ml {
@@ -427,24 +385,6 @@ h3:hover {
         margin: 10px auto 10px auto;
     }
 }
+
 //responsive 
-
-@media only screen and (max-width: $smartphone) {
-
-    footer {
-        flex-direction: column;
-    }
-    .grille_menu {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 2fr 2fr 0.7fr;
-        grid-template-areas: "menu1""menu2""menu3""menu4""prochainement""prochainement";
-        gap: 15px;
-        justify-items: center;
-        align-items: start;
-        padding-top: 15px;
-        .menu {
-            justify-self: center;
-            align-self: center;
-        }
-    }
-}
+@include responsive;

@@ -1,0 +1,106 @@
+@import "variables.scss";
+
+// Zoom des menus grille
+.text_zoom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition-property: transform, opacity;
+    transition-duration: 800ms;
+    &:hover {
+        transform: scale(1.2); /*Taille de l'agrandissement*/
+        opacity: 0.60;
+    }
+    img {
+        max-width: 60px;
+        padding-left: 140px;
+    }
+}
+
+//CSS des Boutons et Animations
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(6deg); }
+    95% { transform: rotate(-6deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.anime:hover {
+    animation-name: shake;
+    animation-duration: 100ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.prochainement {
+    background-color: $color_header_footer;
+    color: $header_color_h1;
+    grid-area: prochainement;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    
+    h4 {
+        text-align: center;
+        padding-top: 0.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-size: 1.2em;
+    }
+}
+.placement_btn_backup {
+    margin-bottom: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.backup {
+    background-color: $color_header_footer;
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    h4 {
+        color: $header_color_h1;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+}
+
+//Prochainement point anime
+@keyframes pointanime {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
+.prochainement {
+    span {
+            animation-name: pointanime;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            font-size: 2.5rem;
+            &:nth-child(2) {
+                animation-delay: 0.4s;
+            }
+            &:nth-child(3) {
+                animation-delay: 0.8s;
+            }
+    }
+}

@@ -1,0 +1,450 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/animations.scss";
+
+//Fonts pour les menus
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    position: relative;
+    background: whitesmoke;
+}
+.container {
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_header_footer;
+    height: 90px;
+    h1 {
+        color:$header_color_h1;
+        font-size: 4em;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    background-color: $color_header_footer;
+    height: 60px;
+    width: 100vw;
+    a, h3 {
+        color: $header_color_h1;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+}
+
+.grille_menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30em 28em 50px 80px;
+    grid-template-areas: "menu1 menu2""menu3 menu4""prochainement prochainement";
+    grid-gap: 40px;
+    align-items: center;
+    justify-items: center;
+    .position_menu1 {
+        justify-self: end;
+        align-self: end;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .position_menu2 {
+        justify-self:start;
+        align-self:end;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .position_menu3 {
+        justify-self: end;
+        align-self: start;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .position_menu4 {
+        justify-self: start;
+        align-self: start;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .menu1 {
+        background-color: $color_menu1_backg;
+        @include menu_size;
+
+        h2 {
+            text-align: center;
+            font-family: 'Devonshire', cursive;
+            font-size: 2.5rem;
+        }
+        h3 {
+            text-align: center;
+            font-family: 'Kalam', cursive;
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+    }
+
+    .menu2 {
+        background-color: $color_menu2_backg;
+        @include menu_size;
+
+        h2 {
+        background: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc 80%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: -1.5px;
+        font-family: 'Kurale', serif;
+        }
+        h3 {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 400;
+            font-family: 'Kurale', serif;
+            color: #c67412;
+        }
+    }
+
+    .menu3 {
+        background-color: $color_menu3_backg;
+        @include menu_size;
+
+        h2 {
+        font-family: 'Dancing Script', cursive;
+        background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        font-size: 2rem;
+        }
+        h3 {
+        font-family: 'Kalam', cursive;
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: #0889fb;
+        }
+    }
+
+    .menu4 {
+        background-color: $color_menu4_backg;
+        @include menu_size;
+
+        h2 {
+            font-family: 'Kaushan Script', cursive;
+            background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+            font-size: 2rem;
+        }
+        h3 {
+            font-family: 'Kalam', cursive;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: #3e923a;
+            }
+    }
+}
+
+
+// MENU1 la note enchantée *
+.container_menu_global {
+    display: flex;
+    background: white;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Menu_1 {
+    @include menu_container;
+    background: $color_menu1_backg;
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Kalam', cursive;
+        font-weight: 400;
+    }
+}
+.menu1_center {
+    @include centrer_menu;
+    h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        flex-basis: 100%;
+        font-family: 'Devonshire', cursive;
+    }
+}
+.image_menu1 {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.image_menu1_end {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    img{
+        width: 45px;
+    }
+    p {
+        font-family: 'Devonshire', cursive;
+        margin-left: 2rem;
+        font-size: 2.5rem;
+    }
+}
+.menu1_titre_miseenpage {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1000ms;
+    }
+}
+h3:hover {
+    background-size: 100% 100%; /*Animation des H3*/
+}
+
+.menu_plat_prix {
+    @include menu_plat_price;
+    p {
+        font-family: 'Kalam', cursive;
+        font-weight: lighter;
+        
+    }
+}
+//Menu2 Le chic à la française
+.Menu_2 {
+    @include menu_container;
+    background: $color_menu2_backg;
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Kurale', serif;
+    }
+
+}
+.menu2_center {
+    @include centrer_menu;
+    h2 {
+        background-image: linear-gradient(140deg, #c67412 15%, #a56799, #6e4ccc 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 3.8rem;
+        font-family: 'Kurale', serif;
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+.menu2_titre_miseenpage {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1000ms;
+    }
+}
+h3:hover {
+    background-size: 100% 100%; /*Animation des H3*/
+}
+.price2 {
+    p {
+        font-family: 'Kurale', serif;
+    }
+}
+.orange {
+    color: #c67412;
+}
+.violet {
+    color: #a56799;
+    
+}
+.blue {
+    color: #6e4ccc;
+    
+}
+
+
+//Menu3 LE délice des papilles
+.Menu_3 {
+    @include menu_container;
+    background: $color_menu3_backg;
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Kalam', cursive;
+        font-weight: 400;
+    }
+
+}
+.menu3_center {
+    @include centrer_menu;
+    h2 {
+        font-size: 3.8rem;
+        font-family: 'Dancing Script', cursive;
+        background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        flex-basis: 100%;
+        
+    }
+}
+.menu3_titre_miseenpage {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1000ms;
+    }
+}
+h3:hover {
+    background-size: 100% 100%; /*Animation des H3*/
+}
+
+//Menu4 La palette du goût
+.Menu_4 {
+    @include menu_container;
+    background: $color_menu4_backg;
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-family: 'Kalam', cursive;
+        font-weight: 400;
+    }
+
+}
+.menu4_center {
+    @include centrer_menu;
+    h2 {
+        font-size: 3.8rem;
+        font-family: 'Kaushan Script', cursive;
+        background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        flex-basis: 100%;
+        
+    }
+}
+.menu4_titre_miseenpage {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1000ms;
+    }
+}
+h3:hover {
+    background-size: 100% 100%; /*Animation des H3*/
+}
+
+//Mentions légales
+.title_ml {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    h2 {
+        font-size: 2.3rem;
+    }
+}
+.container_ml {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    background: #EEEE;
+    margin: auto auto 30px auto;
+    box-shadow: 0 0 10px 1px grey;
+}
+.page_ml {
+    padding: 20px;
+    text-align: left;
+    h2 {
+        font-size: 1.7rem;
+        margin: 20px auto 20px auto;
+    }
+    p {
+        margin: 10px auto 10px auto;
+    }
+}
+//responsive 
+
+@media only screen and (max-width: $smartphone) {
+
+    footer {
+        flex-direction: column;
+    }
+    .grille_menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 0.7fr;
+        grid-template-areas: "menu1""menu2""menu3""menu4""prochainement""prochainement";
+        gap: 15px;
+        justify-items: center;
+        align-items: start;
+        padding-top: 15px;
+        .menu {
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}

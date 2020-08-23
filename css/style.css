@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.text_zoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  transition-duration: 800ms;
+}
+.text_zoom:hover {
+  transform: scale(1.2);
+  /*Taille de l'agrandissement*/
+  opacity: 0.6;
+}
+.text_zoom img {
+  max-width: 60px;
+  padding-left: 140px;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(6deg);
+  }
+  95% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.anime:hover {
+  animation-name: shake;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.prochainement {
+  background-color: #579C87;
+  color: #FDCB46;
+  grid-area: prochainement;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  width: 300px;
+  height: 60px;
+  cursor: pointer;
+}
+.prochainement h4 {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 1.2em;
+}
+
+.placement_btn_backup {
+  margin-bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.backup {
+  background-color: #579C87;
+  min-width: 200px;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+}
+.backup h4 {
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+@keyframes pointanime {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.prochainement span {
+  animation-name: pointanime;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  font-size: 2.5rem;
+}
+.prochainement span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.prochainement span:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  background: whitesmoke;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #579C87;
+  height: 90px;
+}
+header h1 {
+  color: #FDCB46;
+  font-size: 4em;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  background-color: #579C87;
+  height: 60px;
+  width: 100vw;
+}
+footer a, footer h3 {
+  color: #FDCB46;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.grille_menu {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30em 28em 50px 80px;
+  grid-template-areas: "menu1 menu2" "menu3 menu4" "prochainement prochainement";
+  grid-gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+.grille_menu .position_menu1 {
+  justify-self: end;
+  align-self: end;
+}
+.grille_menu .position_menu1 a {
+  color: black;
+  text-decoration: none;
+}
+.grille_menu .position_menu2 {
+  justify-self: start;
+  align-self: end;
+}
+.grille_menu .position_menu2 a {
+  color: black;
+  text-decoration: none;
+}
+.grille_menu .position_menu3 {
+  justify-self: end;
+  align-self: start;
+}
+.grille_menu .position_menu3 a {
+  color: black;
+  text-decoration: none;
+}
+.grille_menu .position_menu4 {
+  justify-self: start;
+  align-self: start;
+}
+.grille_menu .position_menu4 a {
+  color: black;
+  text-decoration: none;
+}
+.grille_menu .menu1 {
+  background-color: #FCDFDB;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 10px 1px grey;
+}
+.grille_menu .menu1 h2 {
+  text-align: center;
+  font-family: "Devonshire", cursive;
+  font-size: 2.5rem;
+}
+.grille_menu .menu1 h3 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.grille_menu .menu2 {
+  background-color: #FFF5FE;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 10px 1px grey;
+}
+.grille_menu .menu2 h2 {
+  background: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc 80%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: -1.5px;
+  font-family: "Kurale", serif;
+}
+.grille_menu .menu2 h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Kurale", serif;
+  color: #c67412;
+}
+.grille_menu .menu3 {
+  background-color: #EBEBEB;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 10px 1px grey;
+}
+.grille_menu .menu3 h2 {
+  font-family: "Dancing Script", cursive;
+  background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 2rem;
+}
+.grille_menu .menu3 h3 {
+  font-family: "Kalam", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #0889fb;
+}
+.grille_menu .menu4 {
+  background-color: #FDFFFD;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 10px 1px grey;
+}
+.grille_menu .menu4 h2 {
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 2rem;
+}
+.grille_menu .menu4 h3 {
+  font-family: "Kalam", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #3e923a;
+}
+
+.container_menu_global {
+  display: flex;
+  background: white;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu_1 {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px 1px grey;
+  background: #FCDFDB;
+}
+.Menu_1 h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+
+.menu1_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.menu1_center h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  flex-basis: 100%;
+  font-family: "Devonshire", cursive;
+}
+
+.image_menu1 {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.image_menu1_end {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.image_menu1_end img {
+  width: 45px;
+}
+.image_menu1_end p {
+  font-family: "Devonshire", cursive;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+.menu1_titre_miseenpage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu1_titre_miseenpage h3 {
+  background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1000ms;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+  /*Animation des H3*/
+}
+
+.menu_plat_prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu_plat_prix p {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menu_plat_prix p {
+  font-family: "Kalam", cursive;
+  font-weight: lighter;
+}
+
+.Menu_2 {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px 1px grey;
+  background: #FFF5FE;
+}
+.Menu_2 h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Kurale", serif;
+}
+
+.menu2_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.menu2_center h2 {
+  background-image: linear-gradient(140deg, #c67412 15%, #a56799, #6e4ccc 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3.8rem;
+  font-family: "Kurale", serif;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.menu2_titre_miseenpage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu2_titre_miseenpage h3 {
+  background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1000ms;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+  /*Animation des H3*/
+}
+
+.price2 p {
+  font-family: "Kurale", serif;
+}
+
+.orange {
+  color: #c67412;
+}
+
+.violet {
+  color: #a56799;
+}
+
+.blue {
+  color: #6e4ccc;
+}
+
+.Menu_3 {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px 1px grey;
+  background: #EBEBEB;
+}
+.Menu_3 h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+
+.menu3_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.menu3_center h2 {
+  font-size: 3.8rem;
+  font-family: "Dancing Script", cursive;
+  background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.menu3_titre_miseenpage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu3_titre_miseenpage h3 {
+  background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1000ms;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+  /*Animation des H3*/
+}
+
+.Menu_4 {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px 1px grey;
+  background: #FDFFFD;
+}
+.Menu_4 h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+
+.menu4_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.menu4_center h2 {
+  font-size: 3.8rem;
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.menu4_titre_miseenpage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu4_titre_miseenpage h3 {
+  background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1000ms;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+  /*Animation des H3*/
+}
+
+.title_ml {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+.title_ml h2 {
+  font-size: 2.3rem;
+}
+
+.container_ml {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  background: #EEEE;
+  margin: auto auto 30px auto;
+  box-shadow: 0 0 10px 1px grey;
+}
+
+.page_ml {
+  padding: 20px;
+  text-align: left;
+}
+.page_ml h2 {
+  font-size: 1.7rem;
+  margin: 20px auto 20px auto;
+}
+.page_ml p {
+  margin: 10px auto 10px auto;
+}
+
+@media only screen and (max-width: 720px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .grille_menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 0.7fr;
+    grid-template-areas: "menu1" "menu2" "menu3" "menu4" "prochainement" "prochainement";
+    gap: 15px;
+    justify-items: center;
+    align-items: start;
+    padding-top: 15px;
+  }
+  .grille_menu .menu {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

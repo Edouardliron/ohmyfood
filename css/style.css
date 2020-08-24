@@ -407,10 +407,9 @@ h3:hover {
   margin-bottom: 2rem;
 }
 .menu2_center h2 {
-  background-image: linear-gradient(140deg, #c67412 15%, #a56799, #6e4ccc 100%);
-  color: transparent;
+  background-image: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc);
   -webkit-background-clip: text;
-  background-clip: text;
+  color: transparent;
   font-size: 3.8rem;
   font-family: "Kurale", serif;
   text-align: center;
@@ -458,12 +457,11 @@ h3:hover {
   margin-bottom: 2rem;
 }
 .menu3_center h2 {
-  font-size: 3.8rem;
-  font-family: "Dancing Script", cursive;
   background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  font-size: 3.8rem;
+  font-family: "Dancing Script", cursive;
   text-align: center;
   flex-basis: 100%;
 }
@@ -493,12 +491,11 @@ h3:hover {
   margin-bottom: 2rem;
 }
 .menu4_center h2 {
-  font-size: 3.8rem;
-  font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  font-size: 3.8rem;
+  font-family: "Kaushan Script", cursive;
   text-align: center;
   flex-basis: 100%;
 }

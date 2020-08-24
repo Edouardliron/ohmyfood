@@ -32,6 +32,25 @@
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
+//Correction pour passer le CSS
+@mixin couleur_titre_menu2 {
+    background-image: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin couleur_titre_menu3 {
+    background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin couleur_titre_menu4 {
+    background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 // Responsive du site 
 
 @mixin responsive {

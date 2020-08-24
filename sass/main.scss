@@ -121,10 +121,7 @@ footer {
         @include menu_size;
 
         h2 {
-        background: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc 80%);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
+        @include couleur_titre_menu2;
         text-align: center;
         font-size: 2rem;
         letter-spacing: -1.5px;
@@ -144,19 +141,16 @@ footer {
         @include menu_size;
 
         h2 {
-        font-family: 'Dancing Script', cursive;
-        background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        text-align: center;
-        font-size: 2rem;
+            @include couleur_titre_menu3;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            font-size: 2rem;
         }
         h3 {
-        font-family: 'Kalam', cursive;
-        font-size: 3.5rem;
-        font-weight: 400;
-        color: #0889fb;
+            font-family: 'Kalam', cursive;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: #0889fb;
         }
     }
 
@@ -165,11 +159,8 @@ footer {
         @include menu_size;
 
         h2 {
+            @include couleur_titre_menu4;
             font-family: 'Kaushan Script', cursive;
-            background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
             text-align: center;
             font-size: 2rem;
         }

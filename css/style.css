@@ -230,10 +230,9 @@ footer a, footer h3 {
   box-shadow: 0 0 10px 1px grey;
 }
 .grille_menu .menu2 h2 {
-  background: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc 80%);
-  color: transparent;
+  background-image: linear-gradient(160deg, #c67412 20%, #a56799, #6e4ccc);
   -webkit-background-clip: text;
-  background-clip: text;
+  color: transparent;
   text-align: center;
   font-size: 2rem;
   letter-spacing: -1.5px;
@@ -253,11 +252,10 @@ footer a, footer h3 {
   box-shadow: 0 0 10px 1px grey;
 }
 .grille_menu .menu3 h2 {
-  font-family: "Dancing Script", cursive;
   background-image: linear-gradient(160deg, #0023db, #0889fb 50%);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  font-family: "Dancing Script", cursive;
   text-align: center;
   font-size: 2rem;
 }
@@ -274,11 +272,10 @@ footer a, footer h3 {
   box-shadow: 0 0 10px 1px grey;
 }
 .grille_menu .menu4 h2 {
-  font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(45deg, #3e923a, #beff7f 75%);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
+  font-family: "Kaushan Script", cursive;
   text-align: center;
   font-size: 2rem;
 }

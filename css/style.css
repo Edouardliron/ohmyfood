@@ -295,14 +295,14 @@ footer a, footer h3 {
   align-items: center;
 }
 
-.Menu_1 {
+.menu_1 {
   width: 70%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0 10px 1px grey;
   background: #FCDFDB;
 }
-.Menu_1 h3 {
+.menu_1 h3 {
   font-size: 2rem;
   text-align: center;
   font-family: "Kalam", cursive;
@@ -383,14 +383,14 @@ h3:hover {
   font-weight: lighter;
 }
 
-.Menu_2 {
+.menu_2 {
   width: 70%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0 10px 1px grey;
   background: #FFF5FE;
 }
-.Menu_2 h3 {
+.menu_2 h3 {
   font-size: 1.5rem;
   text-align: center;
   font-family: "Kurale", serif;
@@ -432,14 +432,14 @@ h3:hover {
   color: #6e4ccc;
 }
 
-.Menu_3 {
+.menu_3 {
   width: 70%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0 10px 1px grey;
   background: #EBEBEB;
 }
-.Menu_3 h3 {
+.menu_3 h3 {
   font-size: 1.5rem;
   text-align: center;
   font-family: "Kalam", cursive;
@@ -466,14 +466,14 @@ h3:hover {
   flex-basis: 100%;
 }
 
-.Menu_4 {
+.menu_4 {
   width: 70%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0 10px 1px grey;
   background: #FDFFFD;
 }
-.Menu_4 h3 {
+.menu_4 h3 {
   font-size: 1.5rem;
   text-align: center;
   font-family: "Kalam", cursive;
@@ -553,8 +553,8 @@ h3:hover {
     align-self: center;
   }
 
-  .menu2_center h2 {
-    font-size: 3rem;
+  .menu_resp {
+    width: 90%;
   }
 
   .menu_titre_miseenpage {

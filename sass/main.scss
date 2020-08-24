@@ -183,7 +183,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.Menu_1 {
+.menu_1 {
     @include menu_container;
     background: $color_menu1_backg;
     h3 {
@@ -247,7 +247,7 @@ h3:hover {
     }
 }
 //Menu2 Le chic à la française
-.Menu_2 {
+.menu_2 {
     @include menu_container;
     background: $color_menu2_backg;
     h3 {
@@ -287,7 +287,7 @@ h3:hover {
 
 
 //Menu3 LE délice des papilles
-.Menu_3 {
+.menu_3 {
     @include menu_container;
     background: $color_menu3_backg;
     h3 {
@@ -311,7 +311,7 @@ h3:hover {
 }
 
 //Menu4 La palette du goût
-.Menu_4 {
+.menu_4 {
     @include menu_container;
     background: $color_menu4_backg;
     h3 {

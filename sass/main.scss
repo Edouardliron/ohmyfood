@@ -222,21 +222,7 @@ footer {
         font-size: 2.5rem;
     }
 }
-.menu_titre_miseenpage {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-        background: linear-gradient(to top, black 0%, black 7%, transparent 10.1%) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 1000ms;
-    }
-}
-h3:hover {
-    background-size: 100% 100%; /*Animation des H3*/
-}
+@include menu1_soulignement;
 
 .menu_plat_prix {
     @include menu_plat_price;
@@ -267,6 +253,9 @@ h3:hover {
         flex-basis: 100%;
     }
 }
+@include menu2_orange;
+@include menu2_violet;
+@include menu2_bleu;
 
 .price2 {
     p {
@@ -275,6 +264,7 @@ h3:hover {
 }
 .orange {
     color: #c67412;
+    
 }
 .violet {
     color: #a56799;
@@ -333,7 +323,7 @@ h3:hover {
         
     }
 }
-
+@include menu4_soulignement;
 
 //Mentions légales
 .title_ml {
@@ -370,3 +360,4 @@ h3:hover {
 
 //responsive 
 @include responsive;
+@include responsive_ipad;

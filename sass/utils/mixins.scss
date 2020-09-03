@@ -144,7 +144,7 @@
 // Responsive du site 
 
 @mixin responsive {
-    @media only screen and (max-width: 670px) {
+    @media only screen and (max-width: 460px) {
 
         footer {
             flex-direction: column;
@@ -190,7 +190,10 @@
     }
 }
 @mixin responsive_ipad {
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 870px) {
+        footer {
+            width: 100%;
+        }
         .menu_titre_miseenpage {
             img {
                 max-width: 110px;

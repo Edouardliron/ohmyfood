@@ -606,7 +606,7 @@ h3:hover {
   margin: 10px auto 10px auto;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 460px) {
   footer {
     flex-direction: column;
   }
@@ -654,7 +654,11 @@ h3:hover {
     padding-right: 1rem;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 870px) {
+  footer {
+    width: 100%;
+  }
+
   .menu_titre_miseenpage img {
     max-width: 110px;
   }
